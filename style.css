@@ -7,3 +7,18 @@
   --weight-normal: 400;
   --weight-heavy: 600;
 }
+#desktop-photo {
+  display: none;
+}
+body {
+  min-height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  --spacing: 2rem;
+}
+header {
+  padding: var(--spacing);
+}
+header img {
+  height: 1.5rem;
+}
