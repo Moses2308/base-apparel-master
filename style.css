@@ -1,0 +1,9 @@
+:root {
+  --color-desatRed: hsl(0, 36%, 70%);
+  --color-softRed: hsl(0, 93%, 68%);
+  --color-darkGrayishRed: hsl(0, 6%, 24%);
+
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-heavy: 600;
+}
