@@ -22,3 +22,25 @@ header {
 header img {
   height: 1.5rem;
 }
+.content {
+  padding: 3rem var(--spacing);
+  text-align: center;
+}
+.content__title {
+  font-size: 3rem;
+  font-weight: var(--weight-heavy);
+  color: var(--color-darkGrayishRed);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  line-height: 1;
+  margin: 1.5rem 0;
+}
+.title__accent {
+  font-weight: var(--weight-light);
+  color: var(--color-desatRed);
+}
+.content > p:nth-of-type(1) {
+  color: var(--color-desatRed);
+  margin-bottom: 2rem;
+  font-size: 14px;
+}
