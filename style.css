@@ -1,11 +1,18 @@
 :root {
   --color-desatRed: hsl(0, 36%, 70%);
+  --color-lightDesatRed: hsl(351, 28%, 87%);
   --color-softRed: hsl(0, 93%, 68%);
   --color-darkGrayishRed: hsl(0, 6%, 24%);
 
   --weight-light: 300;
   --weight-normal: 400;
   --weight-heavy: 600;
+
+  --gradient1A: hsl(0, 0%, 100%);
+  --gradient1B: hsl(0, 100%, 98%);
+
+  --gradient2A: hsl(0, 80%, 86%);
+  --gradient2B: hsl(0, 74%, 74%);
 }
 #desktop-photo {
   display: none;
@@ -43,4 +50,50 @@ header img {
   color: var(--color-desatRed);
   margin-bottom: 2rem;
   font-size: 14px;
+}
+
+#content__form {
+  position: relative;
+}
+#content__form input[type="email"] {
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: 2px solid var(--color-lightDesatRed);
+  border-radius: 5rem;
+}
+#content__form input[type="email"]::placeholder {
+  color: var(--color-lightDesatRed);
+}
+#content__form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 20%;
+  max-width: 90px;
+  min-width: 52px;
+  border-radius: 5rem;
+  border: none;
+  background: linear-gradient(135deg, var(--gradient2A), var(--gradient2B));
+  box-shadow: 0px 5px 30px -14px rgba(0, 0, 0, 0.65);
+}
+#content__form button img {
+  display: block;
+  margin: auto;
+}
+.email-error {
+  --translateY: -50%;
+  --translateX: -5rem;
+  /* desktop version will be -6.5rem */
+  /* breakpoint should be 460px */
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(var(--translateX), var(--translateY));
+}
+.error-message {
+  text-align: left;
+  color: var(--color-softRed);
+  margin: 0.5rem 0 0 1.5rem;
+  font-size: 0.9rem;
 }
