@@ -21,10 +21,13 @@ body {
   min-height: 100vh;
   font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
+}
+main {
   --spacing: 2rem;
 }
 header {
   padding: var(--spacing);
+  max-width: 500px;
 }
 header img {
   height: 1.5rem;
@@ -32,6 +35,7 @@ header img {
 .content {
   padding: 3rem var(--spacing);
   text-align: center;
+  max-width: 500px;
 }
 .content__title {
   font-size: 3rem;
@@ -96,4 +100,42 @@ header img {
   color: var(--color-softRed);
   margin: 0.5rem 0 0 1.5rem;
   font-size: 0.9rem;
+}
+@media (min-width: 500px) {
+  main {
+    background-image: url(./images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+  }
+  main picture {
+    display: none;
+  }
+  #desktop-photo {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+  header {
+    margin: 0 auto;
+    padding: 4rem 0 0 0;
+  }
+  .content {
+    margin: auto;
+    margin-top: 8rem;
+    text-align: left;
+    padding: 0 0;
+  }
+  .content__title {
+    font-size: 4rem;
+  }
+
+  .section-wrapper {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  .email-error {
+    --translateX: -6.5rem;
+    transform: translate();
+  }
 }
