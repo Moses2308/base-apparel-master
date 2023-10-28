@@ -53,17 +53,22 @@
           <form action="" id="content__form">
             <input
               type="email"
-              name=""
-              id=""
+              name="email"
+              id="email"
               placeholder="Email Address"
               autocomplete="off"
+              minlength="2"
             />
-            <img class="email-error" src="./images/icon-error.svg" alt="" />
+            <img
+              class="email-error hidden"
+              src="./images/icon-error.svg"
+              alt=""
+            />
             <button type="submit">
               <img src="./images/icon-arrow.svg" alt="" />
             </button>
           </form>
-          <p class="error-message">Please provide a valid email</p>
+          <p class="error-message hidden">Please provide a valid email</p>
         </div>
       </main>
       <img
@@ -72,5 +77,6 @@
         id="desktop-photo"
       />
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
